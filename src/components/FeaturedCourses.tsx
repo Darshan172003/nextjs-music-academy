@@ -64,7 +64,7 @@ function FeaturedCourses() {
         >
           <Button
             borderRadius="1rem"
-            className="bg-white dark:bg-black text-black text-[1rem] dark:text-white border-neutral-200 dark:border-slate-800"
+            className="bg-white cursor-pointer dark:bg-black text-black text-[1rem] dark:text-white border-neutral-200 dark:border-slate-800"
           >
             View All Courses
           </Button>
