@@ -1,6 +1,6 @@
 import Navbar from "@/components/Navbar";
 import "./globals.css";
-
+import { Toaster } from 'sonner';
 
 
 export default function RootLayout({
@@ -14,6 +14,7 @@ export default function RootLayout({
         <div className="relative w-full">
           <Navbar />
         </div>
+        <Toaster position="top-right" richColors />
         {children}
       </body>
     </html>

@@ -1,5 +1,5 @@
 'use client';
-
+import { toast } from 'sonner';
 import React, { FormEvent, useState } from 'react';
 import { BackgroundBeams } from '@/components/ui/background-beams';
 
@@ -9,6 +9,7 @@ function MusicSchoolContactUs() {
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+    toast.success('Your message has been sent successfully!');
     console.log('Submitted:', { email, message });
 
     setEmail('');
