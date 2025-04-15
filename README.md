@@ -1,8 +1,26 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js Music 🎵
+
+This is a **Next.js** project designed for a music school website. It provides information about courses, instructors, and events, along with a contact form for inquiries.
+
+## Features
+
+- **Dynamic Pages**: Built with Next.js for fast and dynamic rendering.
+- **Contact Form**: Users can send messages directly from the website.
+- **Responsive Design**: Fully optimized for mobile, tablet, and desktop devices.
+- **Interactive UI**: Includes animations and hover effects for an engaging user experience.
+- **JSON Data**: Course information is dynamically loaded from `music_courses.json`.
 
 ## Getting Started
 
-First, run the development server:
+First, clone the repository and install dependencies:
+
+```bash
+git clone https://github.com/Darshan172003/nextjs-music-academy
+cd nextjs-music
+npm install
+```
+
+Then, run the development server:
 
 ```bash
 npm run dev
@@ -10,27 +28,36 @@ npm run dev
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+src/
+├── app/
+│   ├── contact/
+│   │   └── page.tsx        # Contact page with a form and toast notifications
+│   ├── courses/
+│   │   └── page.tsx        # Courses page displaying available music courses
+│   ├── layout.tsx          # Root layout with global styles and Toaster
+│   ├── globals.css         # Global CSS styles
+│   └── page.tsx            # Home page
+├── components/
+│   ├── ui/                 # Reusable UI components (e.g., BackgroundBeams, Tooltips)
+│   ├── Navbar.tsx          # Navigation bar
+│   ├── Footer.tsx          # Footer section
+│   └── HeroSection.tsx     # Hero section for the homepage
+├── data/
+│   └── music_courses.json  # JSON file containing course data
+├── utils/
+│   └── cn.ts               # Utility functions
+```
 
-## Learn More
+## Key Libraries Used
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [Next.js](https://nextjs.org) - Framework for server-rendered React applications.
+- [Aceternity UI](https://ui.aceternity.com/) - Motion-powered UI component library built with Tailwind CSS and Framer Motion.
+- [Sonner](https://github.com/emilkowalski/sonner) - For toast notifications.
+- [Tailwind CSS](https://tailwindcss.com) - Utility-first CSS framework for styling.
