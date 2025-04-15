@@ -4,6 +4,7 @@ import StickyScrollEffect from "@/components/StickyScrollEffect";
 import Infinite from "@/components/InfiniteCards";
 import CardHoverEffect from "@/components/CardHoverEffect";
 import Instructors from "@/components/Instructors";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Infinite/>
       <CardHoverEffect />
       <Instructors />
+      <Footer />
     </main>
   );
 }
